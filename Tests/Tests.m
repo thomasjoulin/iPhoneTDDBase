@@ -7,16 +7,31 @@
 //
 
 #import <GHUnit/GHUnit.h>
+#import "Calculator.h"
 
 @interface Tests : GHTestCase
+{
+    Calculator *calculator;
+}
 
 @end
 
 @implementation Tests
 
-- (void)testThatFails
+- (void)testCalculateShouldReturn4
 {
-	GHFail(@"lol");
+    GHAssertEqualStrings([calculator calculate], @"4", nil);
+}
+
+- (void)setUp
+{
+    calculator = [[Calculator alloc] init];
+}
+
+- (void)tearDown
+{
+    [calculator release];
+    calculator = nil;
 }
 
 @end

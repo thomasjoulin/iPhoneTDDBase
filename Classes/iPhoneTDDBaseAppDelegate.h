@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iPhoneTDDBaseAppDelegate : NSObject <UIApplicationDelegate> {
+@class MyViewController;
+
+@interface iPhoneTDDBaseAppDelegate : NSObject <UIApplicationDelegate>
+{
     UIWindow *window;
+    MyViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet MyViewController *viewController;
 
 @end
 
