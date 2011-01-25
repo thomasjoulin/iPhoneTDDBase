@@ -22,6 +22,10 @@
 		E982847112EF6A1400E685AA /* libModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E982846612EF69BD00E685AA /* libModel.a */; };
 		E982847412EF6A1E00E685AA /* libModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E982846612EF69BD00E685AA /* libModel.a */; };
 		E999921812EF628A007B2F14 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E999921712EF628A007B2F14 /* MainWindow.xib */; };
+		E9A3599412EF6D57007BFE88 /* Calculator.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A3599212EF6D57007BFE88 /* Calculator.h */; };
+		E9A3599512EF6D57007BFE88 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A3599312EF6D57007BFE88 /* Calculator.m */; };
+		E9A359C412EF6EFD007BFE88 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A359C312EF6EFD007BFE88 /* MyView.xib */; };
+		E9A359CC12EF6F49007BFE88 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A359CB12EF6F49007BFE88 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +33,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E982846512EF69BD00E685AA /* Model */;
+			remoteGlobalIDString = E982846512EF69BD00E685AA;
 			remoteInfo = Model;
 		};
 		E982847212EF6A1B00E685AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E982846512EF69BD00E685AA /* Model */;
+			remoteGlobalIDString = E982846512EF69BD00E685AA;
 			remoteInfo = Model;
 		};
 /* End PBXContainerItemProxy section */
@@ -58,6 +62,12 @@
 		8D1107310486CEB800E47090 /* iPhoneTDDBase-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhoneTDDBase-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E982846612EF69BD00E685AA /* libModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E999921712EF628A007B2F14 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		E9A3599212EF6D57007BFE88 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		E9A3599312EF6D57007BFE88 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		E9A359C312EF6EFD007BFE88 /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		E9A359CA12EF6F49007BFE88 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		E9A359CB12EF6F49007BFE88 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		E9A35A3312EF7363007BFE88 /* UITests.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UITests.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +117,9 @@
 		08EC316512EF488300AFA21E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E9A3597D12EF6CD8007BFE88 /* UI Tests */,
+				E9A3597C12EF6CCC007BFE88 /* Unit Tests */,
 				08EC317512EF49E200AFA21E /* GHUnitIOSTestMain.m */,
-				08EC317312EF49D700AFA21E /* Tests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E982846D12EF69F100E685AA /* Model */,
+				E9A359A012EF6DAE007BFE88 /* ViewController */,
 				08EC316512EF488300AFA21E /* Tests */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -151,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E999921712EF628A007B2F14 /* MainWindow.xib */,
+				E9A359C312EF6EFD007BFE88 /* MyView.xib */,
 				8D1107310486CEB800E47090 /* iPhoneTDDBase-Info.plist */,
 				08EC313312EF467A00AFA21E /* UnitTests-Info.plist */,
 			);
@@ -170,8 +183,35 @@
 		E982846D12EF69F100E685AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9A3599212EF6D57007BFE88 /* Calculator.h */,
+				E9A3599312EF6D57007BFE88 /* Calculator.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E9A3597C12EF6CCC007BFE88 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				08EC317312EF49D700AFA21E /* Tests.m */,
+			);
+			name = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		E9A3597D12EF6CD8007BFE88 /* UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E9A35A3312EF7363007BFE88 /* UITests.js */,
+			);
+			name = "UI Tests";
+			sourceTree = "<group>";
+		};
+		E9A359A012EF6DAE007BFE88 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9A359CA12EF6F49007BFE88 /* MyViewController.h */,
+				E9A359CB12EF6F49007BFE88 /* MyViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +221,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A3599412EF6D57007BFE88 /* Calculator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E999921812EF628A007B2F14 /* MainWindow.xib in Resources */,
+				E9A359C412EF6EFD007BFE88 /* MyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +342,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* iPhoneTDDBaseAppDelegate.m in Sources */,
+				E9A359CC12EF6F49007BFE88 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A3599512EF6D57007BFE88 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
